@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.TestPages.BatDauPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,20">
+            <Image x:Name="img" HeightRequest="150" WidthRequest="150"/>
+            <Label x:Name="txtbh" Style="{StaticResource title}"/>
+            <Label Text="Bạn đã sẵn sàng làm bài?" HorizontalOptions="Center" Margin="0, 20, 0,0" FontSize="18"/>
+            <Button x:Name="gotoTest" VerticalOptions="EndAndExpand" Clicked="gotoTest_Clicked"
+                Style="{StaticResource btnnext}"
+                Text="Bắt đầu làm bài" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

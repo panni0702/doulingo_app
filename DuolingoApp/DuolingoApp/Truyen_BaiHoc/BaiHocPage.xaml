@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.Truyen_BaiHoc.BaiHocPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="5" Padding="0" >
+            <Grid HeightRequest="50" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="txtten" FontSize="25" FontAttributes="Bold" Margin="20,0,0,0" HorizontalOptions="Start" TextColor="Black" Grid.Column="0"/>
+                <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="End">
+                    <Image Source="navbar_diamond.png" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="txtdiem" FontSize="25" VerticalOptions="Center" FontAttributes="Bold" Margin="0, 0, 10, 0"/>
+                </StackLayout>
+            </Grid>
+
+
+            <ListView x:Name="lstbh" ItemTapped="lstbh_ItemTapped" HasUnevenRows="True"
+                      IsGroupingEnabled="True" GroupDisplayBinding="{Binding MaChang}">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="5" Margin="0, 0, 0, 10">
+                                <Grid
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            WidthRequest="100">
+                                    <Image Source="lesson_divisor_castle.png"/>
+                                    <Label 
+                                                FontSize="30"
+                                                HorizontalTextAlignment="Center"
+                                                VerticalOptions="EndAndExpand"
+                                                Margin="5"
+                                                Text="{Binding MaChang}"
+                                                TextColor="Brown"
+                                                VerticalTextAlignment="Center"/>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate >
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="5" Margin="0,0,0,15">
+                                <Grid
+                                            HeightRequest="100"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            WidthRequest="100"
+                                            Padding="10">
+                                    <!-- chỗ này chỉnh lại-->
+                                    <BoxView 
+                                                BackgroundColor="LightBlue"
+                                                CornerRadius="65"
+                                                HeightRequest="{OnPlatform Android=100,
+                                                                           iOS=120}"
+                                                HorizontalOptions="Center"
+                                                VerticalOptions="Center"
+                                                WidthRequest="{OnPlatform Android=100,
+                                                                          iOS=120}"
+                                                />
+                                    <ImageButton
+                                                HeightRequest="70"
+                                                HorizontalOptions="Center"
+                                                Source="{Binding Hinh}"
+                                                BackgroundColor="Transparent"
+                                                WidthRequest="70"
+                                                Clicked="ImageButton_Clicked"
+                                                CommandParameter="{Binding .}"
+                                                />
+                                    <Grid
+                                                HorizontalOptions="End"
+                                                VerticalOptions="End"
+                                                WidthRequest="50">
+                                        <Image Source="{Binding ThanhTich}"/>
+                                        <Label 
+                                                    FontSize="16"
+                                                    HorizontalTextAlignment="Center"
+                                                    Text="{Binding Diem}"
+                                                    TextColor="DarkGreen"
+                                                    VerticalTextAlignment="Center"/>
+
+                                    </Grid>
+
+
+                                </Grid>
+                                <Label 
+                                        FontSize="25"
+                                        HorizontalTextAlignment="Center"
+                               
+                                        Text="{Binding TenBH}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

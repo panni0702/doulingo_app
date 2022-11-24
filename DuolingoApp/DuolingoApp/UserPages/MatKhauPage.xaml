@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.UserPages.MatKhauPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="30,40,20,0">
+            <Label Text="Thay Đổi Mật Khẩu" Style="{StaticResource title}" />
+            <Label Text="Mật khẩu hiện tại:" FontAttributes="Bold" FontSize="17"/>
+            <Entry IsPassword="True" x:Name="txtcu" />
+            <Label Text="Mật khẩu mới:" FontAttributes="Bold"  FontSize="17"/>
+            <Entry IsPassword="True" x:Name="txtmoi" />
+            <Label Text="Xác nhận:" FontAttributes="Bold"  FontSize="17"/>
+            <Entry IsPassword="True" x:Name="txtxn"/>
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="txthuy" Text="hủy" Clicked="txthuy_Clicked" Style="{StaticResource btnpre}"  Grid.Column="0"/>
+                <Button x:Name="txtluu" Text="lưu" Clicked="txtluu_Clicked" Style="{StaticResource btnnext}" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

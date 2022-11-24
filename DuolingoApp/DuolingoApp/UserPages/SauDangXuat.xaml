@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DuolingoApp.UserPages.SauDangXuat"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Đã có tài khoản?" TextColor="Black" FontAttributes="Bold" 
+                   VerticalOptions="Center" FontSize="Large" HorizontalOptions="Center"/>
+
+            <Label Text="Tiếp tụ phần bạn đang bỏ dỡ." TextColor="Gray" 
+                   VerticalOptions="Center" FontSize="14" HorizontalOptions="Center"/>
+
+            <Button Text="ĐĂNG NHẬP" x:Name="signin" Clicked="signin_Clicked" TextColor="White" CornerRadius="10"
+                    VerticalOptions="Center" HorizontalOptions="Fill" Margin="20, 0, 20, 10" BackgroundColor="Green"/>
+
+            <Label Text="Bạn mới tham gia Duolingo?" TextColor="Black" FontAttributes="Bold" 
+                   VerticalOptions="Center" FontSize="Large" HorizontalOptions="Center"/>
+
+            <Label Text="Bắt đầu học ngôn ngữ ngay." TextColor="Gray"  
+                   VerticalOptions="Center" FontSize="14" HorizontalOptions="Center"/>
+
+            <Button Text="BẮT ĐẦU NGAY" x:Name="startnow" Clicked="startnow_Clicked" TextColor="Green" CornerRadius="10" 
+                    VerticalOptions="Center" HorizontalOptions="Fill" Margin="20, 0, 20, 10" BackgroundColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

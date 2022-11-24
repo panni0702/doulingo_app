@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.Truyen_BaiHoc.TuMoiPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20,40,20,20" Spacing="10">
+                <Label x:Name="txttu" Style="{StaticResource title}"/>
+                <Label x:Name="txtnghia1" FontSize="22" TextColor="DarkGreen" FontAttributes="Bold"/>
+                <Label x:Name="txtnghia2" FontSize="20" FontAttributes="Italic" TextColor="DarkGreen"/>
+                <Label x:Name="txtvidu" FontSize="18" FontAttributes="Italic" TextColor="Black"/>
+                <Grid Margin="0, 20, 0, 0" x:Name="dst">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0">
+                        <Label Text="Từ đồng nghĩa"  Margin="0,0,0,10" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+                        <ListView x:Name="lstdn" RowHeight="80">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Label Text="{Binding tentu}" TextColor="Black" FontSize="20" Grid.Row="0"/>
+                                            <Label Text="{Binding nghia}" FontSize="18" FontAttributes="Italic" Grid.Row="1"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1">
+                        <Label Text="Từ trái nghĩa"  Margin="0,0,0,10" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+                        <ListView x:Name="lsttn" RowHeight="80">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Label Text="{Binding tentu}" TextColor="Black" FontSize="20" Grid.Row="0"/>
+                                            <Label Text="{Binding nghia}" FontSize="18" FontAttributes="Italic" Grid.Row="1"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

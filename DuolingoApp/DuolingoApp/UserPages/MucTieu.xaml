@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DuolingoApp.UserPages.MucTieu"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Chọn một mục tiêu" TextColor="Black" FontAttributes="Bold" Margin="20, 20, 0, 40"
+                                       VerticalOptions="Center" FontSize="Large" />
+            <ListView x:Name="lstmuctieu" RowHeight="50" ItemSelected="lstmuctieu_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding aimName}" Grid.Row="0" Grid.Column="0" Margin="20, 0, 0, 0" TextColor="Black"
+                                   FontAttributes="Bold" FontSize="18" VerticalOptions="Center" HorizontalTextAlignment="Start"/>
+                                <Label Text="{Binding aimDes}" Grid.Row="0" Grid.Column="1" Margin="0, 0, 20, 0" TextColor="Black"
+                                   FontAttributes="None" FontSize="15" VerticalOptions="Center" HorizontalTextAlignment="End"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="owl_4.png" Grid.Row="0" Grid.Column="0" HeightRequest="120" WidthRequest="120"/>
+
+                <Label Text="Bạn có thể thay đổi mục tiêu sau này" TextColor="Black" 
+                                       VerticalOptions="Center" HorizontalOptions="Center" FontSize="17"
+                                       Grid.Row="0" Grid.Column="1" Margin="0,0,20,0" />
+
+                <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" 
+                                         Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0"
+                                        Margin="20, 0, 20, 10" />
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

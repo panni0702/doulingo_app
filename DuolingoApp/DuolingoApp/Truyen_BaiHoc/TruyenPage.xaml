@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.Truyen_BaiHoc.TruyenPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid HeightRequest="50" Padding="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="txtten" FontSize="25" FontAttributes="Bold" Margin="20,0,0,0" HorizontalOptions="Start" TextColor="Black" Grid.Column="0"/>
+                <StackLayout Orientation="Horizontal" Grid.Column="1" HorizontalOptions="End">
+                    <Image Source="navbar_diamond.png" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="txtdiem" FontSize="25" VerticalOptions="Center" FontAttributes="Bold" Margin="0, 0, 10, 0"/>
+                </StackLayout>
+            </Grid>
+            <ScrollView>
+                <StackLayout Padding="20">
+                    <Label Text="Kho truyện Doulingo" Style="{StaticResource title}" />
+                    <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="16" HorizontalTextAlignment="Center"/>
+                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped_1" Margin="0,40, 0, 0" RowHeight="80">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid Margin="0,9,0,9">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="2*" ></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding Hinh}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Aspect="AspectFit" 
+                                               HeightRequest="90" WidthRequest="70"/>
+                                        <Label Text="{Binding Tentruyen}" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"
+                                               HorizontalOptions="Start" VerticalOptions="Center" 
+                                                TextColor="DarkGreen" FontSize="25"/>
+                                    </Grid>
+
+
+                                    <!--<Button Text="{Binding Tentruyen}" Style="{StaticResource btnnext}" Margin="0,10,0,10" HorizontalOptions="Fill" CommandParameter="{Binding .}" Clicked="Button_Clicked" />
+                                    -->
+                                    </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

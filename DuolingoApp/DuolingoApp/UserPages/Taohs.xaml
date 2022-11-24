@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DuolingoApp.UserPages.Taohs"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,0">
+            <Image Source="owl_6.png" HorizontalOptions="Center" Margin="20, 100, 20, 0" HeightRequest="150" WidthRequest="150"/>
+            <Label Text="Đã đến lúc tạo hồ sơ!" Style="{StaticResource title}"
+                Margin="20, 30, 20, 0"/>
+            <Label Text="Tạo hồ sơ để lưu tiến trình của bạn và tiếp tục học miễn phí" HorizontalOptions="Center" Style="{StaticResource content}"
+               TextColor="Gray"  Margin="20,10,20,0" VerticalTextAlignment="Center"/>
+            <Button Text="TẠO HỒ SƠ" x:Name="profile" Clicked="profile_Clicked" Style="{StaticResource btnnext}"
+                Margin="20, 50, 20, 0" />
+            <Button Text="HỦY" x:Name="cancel" Clicked="cancel_Clicked" Style="{StaticResource btnpre}"
+               Margin="20, 0, 20, 0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

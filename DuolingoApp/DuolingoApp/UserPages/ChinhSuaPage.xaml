@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.UserPages.ChinhSuaPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="20,40,20,0">
+                <Label Text="Chỉnh sửa thông tin" Style="{StaticResource title}"/>
+                <ImageButton x:Name="img"  WidthRequest="150" HeightRequest="150" BackgroundColor="LightGray" HorizontalOptions="Center" CornerRadius="50" Clicked="ImageButton_Clicked"/>
+                <Grid Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Mã Người Dùng:" Grid.Column="0" Grid.Row="0" FontSize="Subtitle" VerticalOptions="Center"/>
+                    <Label Text="Tên Người Dùng:" Grid.Column="0" Grid.Row="1" FontSize="Subtitle" VerticalOptions="Center"/>
+                    <Label Text="Email:" Grid.Column="0" Grid.Row="2"  FontSize="Subtitle" VerticalOptions="Center"/>
+                    <Label Text="Hình đại diện:" Grid.Column="0" Grid.Row="3"  FontSize="Subtitle" VerticalOptions="Center"/>
+                    <Entry x:Name="txtmand" IsReadOnly="True" Grid.Column="1" Grid.Row="0"/>
+                    <Entry x:Name="txtten" Keyboard="Text" Grid.Column="1" Grid.Row="1"/>
+                    <Entry x:Name="txtemail" Keyboard="Email" Grid.Column="1" Grid.Row="2"/>
+                    <Entry x:Name="txthinh" Keyboard="Text" Grid.Column="1" Grid.Row="3"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="50" Margin="0,10,0,10">
+                    <Button x:Name="btnhuy" Text="hủy" Clicked="btnhuy_Clicked" Style="{StaticResource btnpre}"/>
+                    <Button x:Name="btnluu" Text="lưu" Clicked="btnluu_Clicked" Style="{StaticResource btnnext}"/>
+                </StackLayout>
+
+                <Button x:Name="btndx" Text="Xong" Clicked="btndx_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" Margin="0, 40, 0, 0"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

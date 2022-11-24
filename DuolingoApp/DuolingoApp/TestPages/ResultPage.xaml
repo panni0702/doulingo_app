@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.TestPages.ResultPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <StackLayout Margin="0,50,0,0">
+                <Label FontSize="Large" Text="Chúc mừng bạn đã hoàn thành bài tập!!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label FontSize="Large" x:Name="lblscore" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Image Source="likee.gif" IsAnimationPlaying="True" HeightRequest="400"/>
+            </StackLayout>
+            <StackLayout Margin="5,0,5,35" VerticalOptions="EndAndExpand">
+                <Button x:Name="btnfinish" Text="Tiếp tục" Clicked="btnfinish_Clicked" 
+                Style="{StaticResource btnnext}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.UserPages.NguoiDungPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20,40,20,20">
+                <Grid HeightRequest="80">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                    Grid.Column="1"
+                Style="{StaticResource title}"
+                Text="Hồ sơ cá nhân"
+                   />
+
+                    <ImageButton
+                Grid.Column="2"
+                HeightRequest="10"
+                WidthRequest="10"
+                Source="navbar_configuration.png"
+                BackgroundColor="Transparent"
+                 Clicked="ImageButton_Clicked"/>
+                </Grid>
+                <Grid Margin="{OnPlatform Android=0, iOS='0,0,0,66'}" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackLayout
+                Grid.Row="0"
+                Spacing="25"
+                VerticalOptions="Center">
+                        <Frame
+                    Padding="0"
+                    BackgroundColor="LightGray"
+                    CornerRadius="50"
+                    HasShadow="False"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    IsClippedToBounds="True"
+                    VerticalOptions="Center"
+                    WidthRequest="150">
+                            <ImageButton x:Name="img" Clicked="img_Clicked" HeightRequest="150" WidthRequest="150" Aspect="Fill"/>
+                        </Frame>
+
+                        <Label
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    x:Name="txtten" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Label HorizontalOptions="Center" x:Name="txtemail" FontSize="25"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label x:Name="txtdiem" FontSize="25"/>
+                            <Image Source="navbar_diamond.png" HeightRequest="30"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Margin="0, 40, 0,0">
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen" Margin="0,40,0,0" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                        <Grid HeightRequest="30" Margin="0,5,0,40">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Người Dùng" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="End" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                            <Image Source="navbar_diamond.png" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="End" Grid.Column="2"/>
+                        </Grid>
+                        <ListView x:Name="lstnd" RowHeight="60" ItemTapped="lstnd_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid RowSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="100"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Source="{Binding Hinh}" Grid.Column="0" HeightRequest="60" Aspect='AspectFit'/>
+                                            <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="25" LineBreakMode="NoWrap" />
+                                            <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Grid>
+                <Button x:Name="btnmk" Text="đổi mật khẩu" Clicked="btnmk_Clicked" Style="{StaticResource btnpre}" Margin="0, 40, 0 ,0" 
+                   />
+                <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" Style="{StaticResource btnnext}"/>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

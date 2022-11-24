@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.TestPages.BatDauTest"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <StackLayout Margin="0,30"  Padding="30" Spacing="25"  BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center">
+        <Image x:Name="img" />
+        <!--HeightRequest="150" WidthRequest="150"-->
+        <Label x:Name="txtbh" Style="{StaticResource title}"/>
+        <Label Text="Bạn đã sẵn sàng làm bài?" FontSize="18"/>
+        <!-- HorizontalOptions="Center" Margin="0, 20, 0,0"-->
+        <Button x:Name="gotoTest" Style="{StaticResource btnnext}" Text="Bắt đầu làm bài" Clicked="gotoTest_Clicked"/>
+        <!--VerticalOptions="EndAndExpand"-->
+
+    </StackLayout>
+</pages:PopupPage>

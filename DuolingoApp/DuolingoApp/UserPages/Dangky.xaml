@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DuolingoApp.UserPages.Dangky"
+             NavigationPage.HasNavigationBar="False"
+             Title="Đăng ký">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,0">
+            <Label Text="Đăng ký tài khoản" Style="{StaticResource title}"/>
+            <Grid Margin="0,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Bạn tên gì?" Margin="20, 0, 20, 0" TextColor="Black" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="0" FontAttributes="Bold" FontSize="Large" />
+                <Entry Keyboard="Text" Placeholder="Tên" x:Name="usrname" HorizontalOptions="Fill" Margin="20, 0, 20, 10"
+                       Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Text="Mật khẩu:" FontAttributes="Bold" FontSize="Large" Grid.ColumnSpan="2"
+                       TextColor="Black" Margin="20, 0, 0, 0" Grid.Column="0" Grid.Row="2"/>
+                <Entry Keyboard="Text" Placeholder="Mật khẩu" IsPassword="True" x:Name="txtmk" HorizontalOptions="Fill" VerticalOptions="Center"
+                       Margin="20, 0, 20, 10" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <Label Text="Địa chỉ email của bạn là gì?" FontAttributes="Bold" FontSize="Large"
+                       TextColor="Black" Margin="20, 0, 0, 0" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2"/>
+                <Entry Keyboard="Email" Placeholder="Email" x:Name="txtemail" HorizontalOptions="Fill" Margin="20, 0, 20, 10"
+                       Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"/>
+                <Button x:Name="btndangky" Text="Đăng Ký" Clicked="btndangky_Clicked" Style="{StaticResource btnnext}"
+                        Margin="20, 20, 20, 0"  Grid.Row="6" Grid.Column="1"/>
+                <Button x:Name="btnhuy" Text="Hủy" Clicked="btnhuy_Clicked" Style="{StaticResource btnpre}"
+                        Margin="20, 20, 20, 0"  CornerRadius="10" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Khi đăng ký trên Duolingo, bạn đã đồng ý với Các chính sách và Chính sách bảo mật của chúng tôi" 
+                       TextColor="Gray" Style="{StaticResource content}"  HorizontalOptions="Center" Margin="20, 20, 20, 10" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DuolingoApp.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Image Source="dol.png" Margin="0, 135, 0, 30" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Label Text="Duolingo" Style="{StaticResource title}"/>
+        <Label Text="Học ngoại ngữ miễn phí. Mãi mãi." TextColor="Gray" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="BẮT ĐẦU NGAY" x:Name="cmdstart" Clicked="cmdstart_Clicked" Style="{StaticResource btnnext}"  
+                Margin="30, 100, 30, 0"/>
+        <Button Text="TÔI ĐÃ CÓ TÀI KHOẢN" x:Name="cmdtk" Clicked="cmdtk_Clicked" Style="{StaticResource btnpre}"
+                Margin="30, 0, 20, 10" />
+    </StackLayout>
+
+</ContentPage>

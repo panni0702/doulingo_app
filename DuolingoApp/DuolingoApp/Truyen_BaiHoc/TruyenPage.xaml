@@ -20,7 +20,7 @@
                 <StackLayout Padding="20">
                     <Label Text="Kho truyện Doulingo" Style="{StaticResource title}" />
                     <Label Text="Cải thiện khả năng đọc của bạn với những câu chuyện ngắn!" HorizontalOptions="Center" VerticalOptions="Center" FontSize="16" HorizontalTextAlignment="Center"/>
-                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped_1" Margin="0,40, 0, 0" RowHeight="80">
+                    <ListView x:Name="lsttr" ItemTapped="lsttr_ItemTapped_1" Margin="0,20, 0, 0" RowHeight="80">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>

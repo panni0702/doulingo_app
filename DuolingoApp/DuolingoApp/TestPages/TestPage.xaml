@@ -5,16 +5,16 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout Margin="5,0,5,10" BackgroundColor="White">
-            <FlexLayout Margin="0,0,10,100" >
-                <Button x:Name="Back" Text="X" WidthRequest="50" BackgroundColor="White" Clicked="Back_Clicked" />
-                <ProgressBar x:Name="pbar" Margin="10,1,0,0" WidthRequest="300" ScaleY="3" ProgressColor="LawnGreen"/>
+            <FlexLayout Margin="0,0,10,30" >
+                <Button x:Name="Back" Text="X" WidthRequest="40" BackgroundColor="White" Clicked="Back_Clicked" TextColor="Black" />
+                <ProgressBar x:Name="pbar" Margin="10,1,0,0" WidthRequest="250" ScaleY="3" ProgressColor="LawnGreen"/>
             </FlexLayout>
 
-            <StackLayout>
+            <StackLayout Margin="5,0,5,0">
                 <Label Margin="0,0,0,0" x:Name="lblQuestion" TextColor="Black"
                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
 
-                <Grid Margin="0,160,0,20">
+                <Grid Margin="0,40,0,20">
                     <Button x:Name="btnresp1" Grid.Row="0" Grid.Column="0" HeightRequest="100"
                     TextColor="Black" BackgroundColor="White" FontSize="Medium" 
                     BorderColor="Gray" BorderWidth="4" CornerRadius="15"
@@ -36,14 +36,14 @@
                     Clicked="btnresp4_Clicked" ></Button>
                 </Grid>
                 <Button Text="Xem kết quả" x:Name="btnresult"
-                    HeightRequest="70" WidthRequest="10" CornerRadius="15" FontSize="Large"
+                    HeightRequest="60" WidthRequest="10" CornerRadius="15" FontSize="Large"
                     TextColor="White" BackgroundColor="DarkGreen"
                     Clicked="btnresult_Clicked"
                     IsVisible="False">
                 </Button>
 
                 <Button Text="Xác nhận" x:Name="btnconfirm"
-                    HeightRequest="70" WidthRequest="10" CornerRadius="15" FontSize="Large"
+                    HeightRequest="60" WidthRequest="10" CornerRadius="15" FontSize="Large"
                     TextColor="White" BackgroundColor="DarkGreen"
                     Clicked="btnconfirm_Clicked"
                     IsVisible="True">

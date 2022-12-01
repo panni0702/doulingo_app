@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+dzyxuujRpMpm9fsuZ+e8dYltlj8y2cV5/iqtiFw/dV8NJW4wSMpg56p0YmwiBwxTOtHeQPV4krNx0rBr+Uyow==",
+  "dgSpecHash": "xN7f19NcXpfmbYDtMfJ0r8sSziUduhDNj9BrxAz7eBxtppY+1DZ6nDWVzhfRoqlsWL7bQdV7i8B0bXU/VjDy7w==",
   "success": true,
   "projectFilePath": "D:\\IE307.N11-didong\\DuolingoApp\\DuolingoApp\\DuolingoApp.iOS\\DuolingoApp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nhiph\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\nhiph\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\nhiph\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\nhiph\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\nhiph\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",

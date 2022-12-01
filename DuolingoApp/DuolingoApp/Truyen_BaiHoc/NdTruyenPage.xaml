@@ -5,10 +5,10 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="20, 40, 20, 20">
+            <StackLayout Padding="20, 40, 20, 10">
                 <Image x:Name="img" Source="{Binding Hinh}" HeightRequest="70" VerticalOptions="Center"></Image>
                 <Label x:Name="txtten" Style="{StaticResource title}" Margin="0,0,0, 15"/>
-                <Label x:Name="txtnd" FontSize="19" Margin="0,0,0, 15" TextColor="Black" />
+                <Label x:Name="txtnd" FontSize="18" Margin="0,0,0, 15" TextColor="Black" />
                 <ListView x:Name="lsttu" ItemTapped="lsttu_ItemTapped" RowHeight="60">
                     <ListView.ItemTemplate>
                         <DataTemplate>

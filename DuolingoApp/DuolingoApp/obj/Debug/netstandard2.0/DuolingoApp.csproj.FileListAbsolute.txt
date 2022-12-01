@@ -2,7 +2,6 @@ D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\bin\Debug\netstandard2.0
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\bin\Debug\netstandard2.0\DuolingoApp.dll
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\bin\Debug\netstandard2.0\ref\DuolingoApp.dll
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\bin\Debug\netstandard2.0\DuolingoApp.pdb
-D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.csproj.AssemblyReference.cache
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -32,3 +31,4 @@ D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.dll
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\ref\DuolingoApp.dll
 D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.pdb
+D:\IE307.N11-didong\DuolingoApp\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.csproj.AssemblyReference.cache

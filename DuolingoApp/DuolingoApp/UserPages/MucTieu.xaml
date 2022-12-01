@@ -8,9 +8,9 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Chọn một mục tiêu" TextColor="Black" FontAttributes="Bold" Margin="20, 20, 0, 40"
-                                       VerticalOptions="Center" FontSize="Large" />
-            <ListView x:Name="lstmuctieu" RowHeight="50" ItemSelected="lstmuctieu_ItemSelected">
+            <Label Text="Chọn một mục tiêu" TextColor="Black" FontAttributes="Bold" Margin="0, 20, 0, 10"
+                                       VerticalOptions="Center" FontSize="25" HorizontalOptions="Center"/>
+            <ListView x:Name="lstmuctieu" RowHeight="60" ItemSelected="lstmuctieu_ItemSelected" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -43,7 +43,7 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Image Source="owl_4.png" Grid.Row="0" Grid.Column="0" HeightRequest="120" WidthRequest="120"/>
+                <Image Source="owl_4.png" Grid.Row="0" Grid.Column="0"  HeightRequest="100" WidthRequest="100"/>
 
                 <Label Text="Bạn có thể thay đổi mục tiêu sau này" TextColor="Black" 
                                        VerticalOptions="Center" HorizontalOptions="Center" FontSize="17"

@@ -30,7 +30,7 @@
                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
 
             <Label Text="Học từ cấp độ cơ bạn các kỹ năng nghe, nói, đọc, viết và ngữ pháp Tiếng Anh." Margin="20, 0, 20, 0"
-                   TextColor="Black" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" 
+                   TextColor="Black" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center" 
                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
 
             <Label Text="Nội dung" TextColor="Black" FontAttributes="Bold" Margin="20, 0, 0, 0"
@@ -38,36 +38,36 @@
                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"/>
 
             <Image Source="dictionary.png" Grid.Row="3" Grid.Column="0"  Margin="20, 0, 0, 0"
-                   HeightRequest="50" WidthRequest="50"/>
+                   HeightRequest="45" WidthRequest="45"/>
 
             <Label Text="3.600+ Từ vựng" TextColor="Black" FontAttributes="Bold" 
-                   VerticalOptions="Center" HorizontalOptions="Center" FontSize="15"
+                   VerticalOptions="Center" HorizontalOptions="Center" FontSize="14"
                    Grid.Row="3" Grid.Column="1" Margin="10,0,20,0"/>
 
-            <Image Source="pencil.png" Grid.Row="3" Grid.Column="2" HeightRequest="50" WidthRequest="50"/>
+            <Image Source="pencil.png" Grid.Row="3" Grid.Column="2" HeightRequest="45" WidthRequest="45"/>
 
             <Label Text="7.600+ câu" TextColor="Black" FontAttributes="Bold"
-                   VerticalOptions="Center" HorizontalOptions="Center" FontSize="15"
+                   VerticalOptions="Center" HorizontalOptions="Center" FontSize="14"
                    Grid.Row="3" Grid.Column="3" Margin="0,0,20,0"/>
 
             <Label Text="Xây dựng các kỹ năng của bạn" FontSize="17" FontAttributes="Bold" Margin="20, 0, 0, 0"
                    Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="Center" TextColor="Black"/>
 
-            <Image Source="map.png" Grid.Row="5" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <Image Source="map.png" Grid.Row="5" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="45" WidthRequest="45"/>
 
             <Label Text="Gọi món và hỏi đường như người bản địa." TextColor="Black"  Margin="10, 0, 0, 0"
                    VerticalOptions="Center" HorizontalOptions="Center" FontSize="16"
                    Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"/>
 
-            <Image Source="lightbulb.png" Grid.Row="6" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <Image Source="lightbulb.png" Grid.Row="6" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="45" WidthRequest="45"/>
 
-            <Label Text="Hỗ trợ giúp lớp học của bạn nổi bật ở trường." TextColor="Black"  Margin="10, 0, 0, 0"
+            <Label Text="Hỗ trợ giúp lớp học của bạn nổi bật ở trường." TextColor="Black"  Margin="10, 0, 10, 0"
                    VerticalOptions="Center" HorizontalOptions="Center" FontSize="16"
                    Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3"/>
 
-            <Image Source="growth.png" Grid.Row="7" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="50" WidthRequest="50"/>
+            <Image Source="growth.png" Grid.Row="7" Grid.Column="0" Margin="20, 0, 0, 0" HeightRequest="45" WidthRequest="45"/>
 
-            <Label Text="Đáp ứng yêu cầu thăng tiến và sự nghiệp" TextColor="Black"  Margin="10, 0, 0, 0"
+            <Label Text="Đáp ứng yêu cầu thăng tiến và sự nghiệp" TextColor="Black"  Margin="10, 0, 20, 0"
                    VerticalOptions="Center" HorizontalOptions="Center" FontSize="16"
                    Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3"/>
 

@@ -6,18 +6,39 @@
              mc:Ignorable="d"
              x:Class="DuolingoApp.UserPages.CapDo"
              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="#FFDCA9" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Cùng tìm cấp độ học phù hợp cho bạn nhé" TextColor="Black" FontAttributes="Bold" Margin="20, 20, 20, 30"
+            <Label Text="Cùng tìm cấp độ học phù hợp cho bạn nhé" TextColor="#F57328 " FontAttributes="Bold" Margin="20, 20, 20, 30"
                                        VerticalOptions="Center" FontSize="25"  HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
-            <ListView x:Name="lstcapdo" RowHeight="150" ItemSelected="lstcapdo_ItemSelected">
-                <ListView.ItemTemplate>
+            <CollectionView x:Name="lstcapdo"  SelectedItem="lstcapdo_ItemSelected" SelectionMode="Single" Margin="15, 0, 15, 0">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="1"
+                                     VerticalItemSpacing="15"
+                                    ></GridItemsLayout>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
                     <DataTemplate>
-
-                        <ViewCell>
+                        <Frame BorderColor="#F57328" CornerRadius="20">
                             <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition/>
                                     <RowDefinition/>
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
@@ -28,24 +49,19 @@
                                 <Image Source="{Binding levelImg}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" Grid.RowSpan="2" Margin="20,10,5,0"
                                        HeightRequest="100" WidthRequest="100" VerticalOptions="Center"  HorizontalOptions="Center"/>
                                 <Label Text="{Binding levelName}" Grid.Row="0" Grid.Column="1" TextColor="Black" 
-                                   FontAttributes="Bold" FontSize="17" Margin="0,5,15,0"/>
+                                   FontAttributes="Bold" FontSize="22" Margin="0,5,15,0"/>
                                 <Label Text="{Binding levelDes}" Grid.Row="1" Grid.Column="1" Margin="0,10,20,0" 
-                                   FontAttributes="None" FontSize="14" TextColor="Black"/>
+                                   FontAttributes="None" FontSize="16" TextColor="Black"/>
 
                             </Grid>
-                        </ViewCell>
+                        </Frame>
                     </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition />
-                </Grid.RowDefinitions>
-                <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End"
-                                        Grid.Row="0" Grid.Column="0"
-                                        Margin="20, 0, 20, 10" />
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-            </Grid>
+            <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" 
+                                        
+                                        Margin="20, 0, 20, 10" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

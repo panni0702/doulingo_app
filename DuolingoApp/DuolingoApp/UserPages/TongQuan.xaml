@@ -74,6 +74,10 @@
             <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}"
                   Grid.ColumnSpan="4" Grid.Row="8" Grid.Column="0" VerticalOptions="End"
                     Margin="20, 0, 20, 10" />
+
+            <Button Text="TEST" x:Name="test" Clicked="test_Clicked" Style="{StaticResource btnnext}"
+                  Grid.ColumnSpan="4" Grid.Row="8" Grid.Column="0" VerticalOptions="End"
+                    Margin="20, 0, 20, 10" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

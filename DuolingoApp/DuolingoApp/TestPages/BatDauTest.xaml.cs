@@ -27,6 +27,10 @@ namespace DuolingoApp.TestPages
             u = nd;
             txtbh.Text = b.TenBH;
             img.Source = b.Hinh;
+            if(u == null)
+            {
+                img.Source = "dou3.gif";
+            }
         }
 
         private void gotoTest_Clicked(object sender, EventArgs e)

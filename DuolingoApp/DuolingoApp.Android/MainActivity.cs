@@ -21,7 +21,7 @@ namespace DuolingoApp.Droid
             Rg.Plugins.Popup.Popup.Init(this);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
-            Window.SetStatusBarColor(Android.Graphics.Color.Argb(255, 0, 128, 0));
+            Window.SetStatusBarColor(Android.Graphics.Color.Argb(255, 245, 115, 40));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

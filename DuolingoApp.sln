@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32802.440
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuolingoApp.Android", "DuolingoApp\DuolingoApp.Android\DuolingoApp.Android.csproj", "{C6EB09DC-E4E1-4267-A562-C21F3378C4D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuolingoApp.iOS", "DuolingoApp\DuolingoApp.iOS\DuolingoApp.iOS.csproj", "{D2D50E3D-1E98-45EC-89C7-0330479ED8E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuolingoApp", "DuolingoApp\DuolingoApp\DuolingoApp.csproj", "{8976375E-2D24-4915-8157-5F849702AD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DuolingoApp", "DuolingoApp\DuolingoApp\DuolingoApp.csproj", "{8976375E-2D24-4915-8157-5F849702AD24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

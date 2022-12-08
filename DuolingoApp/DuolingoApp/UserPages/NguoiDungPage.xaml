@@ -15,7 +15,7 @@
 
                     <Label
                     Grid.Column="1"
-                FontSize="26" TextColor="DarkGreen" HorizontalOptions="Center" FontAttributes="Bold" VerticalOptions="Center"
+                FontSize="26" TextColor="#F57328 " HorizontalOptions="Center" FontAttributes="Bold" VerticalOptions="Center"
                 Text="Hồ sơ cá nhân"
                    />
 
@@ -64,7 +64,7 @@
                         </StackLayout>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Margin="0, 40, 0,0">
-                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="DarkGreen" Margin="0,40,0,0" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
+                        <Label Text="Bảng xếp hạng"  FontSize="Title" FontAttributes="Bold" TextColor="#F57328 " Margin="0,40,0,0" HorizontalTextAlignment="Center" HorizontalOptions="Center" />
                         <Grid HeightRequest="30" Margin="0,5,0,40">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100"/>

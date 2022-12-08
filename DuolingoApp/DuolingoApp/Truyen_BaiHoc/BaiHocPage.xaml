@@ -81,7 +81,7 @@
                                                     FontSize="16"
                                                     HorizontalTextAlignment="Center"
                                                     Text="{Binding Diem}"
-                                                    TextColor="DarkGreen"
+                                                    TextColor="#F57328 "
                                                     VerticalTextAlignment="Center"/>
 
                                     </Grid>

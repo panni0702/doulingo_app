@@ -17,6 +17,7 @@ namespace DuolingoApp.TestPages
         public BatDauPage()
         {
             InitializeComponent();
+            img.Source = "dou3min.gif";
         }
 
         public BatDauPage(BaiHoc bh)

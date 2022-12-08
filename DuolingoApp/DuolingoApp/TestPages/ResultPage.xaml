@@ -5,7 +5,7 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout Spacing="0">
-            <StackLayout Margin="10,50,10,10">
+            <StackLayout Margin="10,150,10,10">
                 <Label FontSize="Large" Text="Chúc mừng bạn đã hoàn thành bài tập!!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
                 <Label FontSize="Large" x:Name="lblscore" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontAttributes="Bold"/>
             </StackLayout>

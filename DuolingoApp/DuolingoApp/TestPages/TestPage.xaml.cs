@@ -105,7 +105,7 @@ namespace DuolingoApp.TestPages
         {
             QuestionHandle(point);
             clearpressed();
-            btnresp1.BackgroundColor = Color.LawnGreen;
+            btnresp1.BackgroundColor = Color.FromHex("#FAAB78");
             btnresp1.TextColor = Color.White;
             Answer = btnresp1.Text;
         }
@@ -114,7 +114,7 @@ namespace DuolingoApp.TestPages
         {
             QuestionHandle(point);
             clearpressed();
-            btnresp2.BackgroundColor = Color.LawnGreen;
+            btnresp2.BackgroundColor = Color.FromHex("#FAAB78");
             btnresp2.TextColor = Color.White;
             Answer = btnresp2.Text;
         }
@@ -123,7 +123,7 @@ namespace DuolingoApp.TestPages
         {
             QuestionHandle(point);
             clearpressed();
-            btnresp3.BackgroundColor = Color.LawnGreen;
+            btnresp3.BackgroundColor = Color.FromHex("#FAAB78");
             btnresp3.TextColor = Color.White;
             Answer = btnresp3.Text;
         }
@@ -132,7 +132,7 @@ namespace DuolingoApp.TestPages
         {
             QuestionHandle(point);
             clearpressed();
-            btnresp4.BackgroundColor = Color.LawnGreen;
+            btnresp4.BackgroundColor = Color.FromHex("#FAAB78");
             btnresp4.TextColor = Color.White;
             Answer = btnresp4.Text;
         }

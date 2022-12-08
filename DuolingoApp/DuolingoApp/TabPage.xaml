@@ -5,9 +5,9 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             android:TabbedPage.OffscreenPageLimit="1"
             BarBackgroundColor="WhiteSmoke"
-            BarTextColor="DarkGreen"
+            BarTextColor="#FF5C00"
             UnselectedTabColor="LightGray"
-            SelectedTabColor="DarkGreen"
+            SelectedTabColor="#FF5C00"
              x:Class="DuolingoApp.TabPage"
             NavigationPage.HasNavigationBar="False">
     <TabbedPage.Children>

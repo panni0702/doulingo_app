@@ -21,5 +21,10 @@ namespace DuolingoApp.UserPages
         {
             Navigation.PushAsync(new MucTieu());
         }
+
+        private void test_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new GioiThieu());
+        }
     }
 }

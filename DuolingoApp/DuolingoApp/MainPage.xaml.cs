@@ -29,7 +29,7 @@ namespace DuolingoApp
 
         private void cmdstart_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TongQuan());
+            Navigation.PushAsync(new GioiThieu());
         }
 
         private void cmdtk_Clicked(object sender, EventArgs e)

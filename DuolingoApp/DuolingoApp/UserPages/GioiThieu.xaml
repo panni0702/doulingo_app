@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DuolingoApp.UserPages.GioiThieu"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <StackLayout BackgroundColor="LightGray">
+        <Label Text="Tổng quan khóa học" TextColor="#F57328" FontAttributes="Bold" Margin="20, 20, 0, 0"
+                   VerticalOptions="Center" FontSize="30" 
+               HorizontalOptions="Center"
+                  />
+        <Label Text="Học từ cấp độ cơ bạn các kỹ năng nghe, nói, đọc, viết và ngữ pháp Tiếng Anh." Margin="20, 10, 20, 0"
+                   TextColor="Black" FontSize="18" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
+                VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+               FontAttributes="Bold"
+                   />
+        <CarouselView x:Name="CarVIntroduce"
+                      IndicatorView="indicatorView"
+                      HorizontalOptions="Start">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame HasShadow="True" BorderColor="LightGray"
+                               CornerRadius="20" Margin="20" HeightRequest="300" WidthRequest="300"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                            <StackLayout>
+
+                                <Image Source="{Binding Image}" HeightRequest="150"  WidthRequest="150" Margin="20, 0, 20, 0"/>
+                                <Label Text="{Binding Text}" FontSize="25" TextColor="#F57328" FontAttributes="Bold"
+                                       VerticalOptions="CenterAndExpand"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalTextAlignment="Center">
+                                      
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="indicatorView"
+                   IndicatorColor="#F57328"
+                   SelectedIndicatorColor="DarkGray"
+                   HorizontalOptions="Center" 
+                       Margin="20, 20, 0, 0"/>
+        <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}"
+                    VerticalOptions="End"
+                    Margin="20, 0, 20, 10" />
+    </StackLayout>
+    
+    
+</ContentPage>

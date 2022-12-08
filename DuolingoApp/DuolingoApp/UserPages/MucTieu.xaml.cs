@@ -13,6 +13,7 @@ namespace DuolingoApp.UserPages
     public partial class MucTieu : ContentPage
     {
         List<Aim> aimList;
+        string[] DouLogo = new string[] {"dou.gif", "dou4.png", "dou5.png"};
         void AimInit()
         {
             aimList = new List<Aim>();
@@ -28,6 +29,7 @@ namespace DuolingoApp.UserPages
             InitializeComponent();
             AimInit();
         }
+
 
         private void continue_Clicked(object sender, EventArgs e)
         {

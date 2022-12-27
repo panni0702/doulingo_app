@@ -36,7 +36,7 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="#F57328" CornerRadius="20">
+                        <Frame BorderColor="#F57328" CornerRadius="40">
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
@@ -59,9 +59,13 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" 
-                                        
-                                        Margin="20, 0, 20, 10" />
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="home2.png" x:Name="BtnHome" Clicked="BtnHome_Clicked" HeightRequest="50" 
+                         Margin="30, 0, 10, 10" BackgroundColor="GhostWhite"/>
+                <Button Text="TIẾP TỤC" x:Name="continue" Clicked="continue_Clicked" Style="{StaticResource btnnext}" VerticalOptions="End" 
+                                        WidthRequest="260"
+                                        Margin="20, 0, 10, 10" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

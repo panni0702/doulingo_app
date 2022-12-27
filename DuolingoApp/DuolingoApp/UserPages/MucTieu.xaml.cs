@@ -40,5 +40,10 @@ namespace DuolingoApp.UserPages
         {
             Aim aim = (Aim)e.SelectedItem;
         }
+
+        private void BtnHome_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
     }
 }

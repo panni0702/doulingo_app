@@ -42,5 +42,7 @@ namespace DuolingoApp.UserPages
         {
             Navigation.PushAsync(new MucTieu());
         }
+
+
     }
 }

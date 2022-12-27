@@ -38,5 +38,9 @@ namespace DuolingoApp.UserPages
         {
             Navigation.PushAsync(new BatDauPage());
         }
+        private void BtnHome_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
     }
 }

@@ -23,7 +23,7 @@
                 <ListView.GroupHeaderTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="5" Margin="0, 0, 0, 10">
+                            <StackLayout Margin="0, 0, 0, 10" BackgroundColor="#FFDCA9">
                                 <Grid
                                             HorizontalOptions="Center"
                                             VerticalOptions="Center"

@@ -22,7 +22,7 @@
                 <DataTemplate>
                     <StackLayout>
                         <Frame HasShadow="True" BorderColor="LightGray"
-                               CornerRadius="20" Margin="20" HeightRequest="300" WidthRequest="300"
+                               CornerRadius="40" Margin="20" HeightRequest="300" WidthRequest="300"
                                HorizontalOptions="Center"
                                VerticalOptions="CenterAndExpand">
                             <StackLayout>

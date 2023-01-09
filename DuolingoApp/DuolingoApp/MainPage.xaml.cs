@@ -26,7 +26,6 @@ namespace DuolingoApp
                 db.CreateQuestion();
             }
         }
-
         private void cmdstart_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new GioiThieu());
@@ -36,9 +35,5 @@ namespace DuolingoApp
         {
             Navigation.PushAsync(new SignIn());
         }
-
-
-
-
     }
 }

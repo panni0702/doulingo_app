@@ -45,7 +45,6 @@ namespace DuolingoApp.UserPages
                  Navigation.PopAsync();
             }
         }
-
         private void btnluu_Clicked(object sender, EventArgs e)
         {
             var t = txtten.Text;
@@ -56,11 +55,6 @@ namespace DuolingoApp.UserPages
             if (txtmand.Text != "")
             {
                 u1.MaND = int.Parse(txtmand.Text);
-                /*if (db.TonTai(txtten.Text, txtemail.Text) == true)
-                {
-                    DisplayAlert("Thông báo", "Tên Đăng nhập hoặc Email đã có người sử dụng", "OK");
-                }
-                else*/
                 if (db.SuaNguoiDung(u1) == true)
                 {
                     u = u1;
@@ -73,8 +67,6 @@ namespace DuolingoApp.UserPages
             }
 
         }
-
-
         private void btndx_Clicked(object sender, EventArgs e)
         {
 

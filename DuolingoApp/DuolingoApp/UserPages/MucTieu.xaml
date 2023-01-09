@@ -42,8 +42,6 @@
                 <Label Text="Bạn có thể thay đổi mục tiêu sau này" TextColor="Black" 
                                        VerticalOptions="Center" HorizontalOptions="Center" FontSize="17"
                                        Grid.Row="0" Grid.Column="1" Margin="0,0,20,0" />
-
-                
             </Grid>
             <CollectionView x:Name="lstmuctieu" SelectedItem="lstmuctieu_ItemSelected" Margin="15, 0, 15, 0"  SelectionMode="Single">
                 <CollectionView.ItemsLayout>
@@ -82,8 +80,6 @@
                                         WidthRequest="260"
                                         Margin="20, 0, 10, 10" />
             </StackLayout>
-            
         </StackLayout>
-
     </ContentPage.Content>
 </ContentPage>

@@ -20,7 +20,6 @@ namespace DuolingoApp.UserPages
             InitializeComponent();
             db = new Database();
         }
-
         private bool validateEmail(string email)
         {
             string[] emailArray = email.Split('@');
@@ -33,7 +32,6 @@ namespace DuolingoApp.UserPages
             }
             return true;
         }
-
         private async void  btndangky_Clicked(object sender, EventArgs e)
         {
             var ten = usrname.Text;
@@ -82,11 +80,9 @@ namespace DuolingoApp.UserPages
 
                     }
                 }
-
                 
             }   
         }
-
         private void btnhuy_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new MainPage());

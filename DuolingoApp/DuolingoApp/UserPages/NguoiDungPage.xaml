@@ -18,7 +18,6 @@
                 FontSize="26" TextColor="#F57328 " HorizontalOptions="Center" FontAttributes="Bold" VerticalOptions="Center"
                 Text="Hồ sơ cá nhân"
                    />
-
                     <ImageButton
                 Grid.Column="2"
                 HeightRequest="8"
@@ -84,7 +83,6 @@
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="100"/>
                                             </Grid.ColumnDefinitions>
-
                                             <Image Source="{Binding Hinh}" Grid.Column="0" HeightRequest="60" Aspect='AspectFit'/>
                                             <Label Text="{Binding TenND}" Grid.Column="1" VerticalOptions="Center" FontSize="25" LineBreakMode="NoWrap" />
                                             <Label Text="{Binding Diem}" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="22"/>
@@ -99,7 +97,6 @@
                    />
                 <Button x:Name="btndx" Text="đăng xuất" Clicked="btndx_Clicked" Style="{StaticResource btnnext}"/>
             </StackLayout>
-
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

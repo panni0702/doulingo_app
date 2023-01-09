@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="DuolingoApp.Translate.TranslatePage">
+    <ContentPage.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CheckedStates">
+                        <VisualState x:Name="Checked">
+                            <VisualState.Setters>
+                                <Setter Property="TextColor"
+                                        Value="Black" />
+                                <Setter Property="Opacity"
+                                        Value="1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Unchecked">
+                            <VisualState.Setters>
+                                <Setter Property="TextColor"
+                                        Value="#F57328" />
+                                <Setter Property="Opacity"
+                                        Value="0.5" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0"  BackgroundColor="#FAAB78"  CornerRadius="15" Padding="2">
+                <Frame BorderColor="#FAAB78"  CornerRadius="15">
+                    <Entry x:Name="input" Keyboard="Text" 
+                   WidthRequest="200" HeightRequest="100" 
+                   FontSize="25" Placeholder="Nhập văn bản"></Entry>
+                </Frame>
+            </Frame>
+            
+            <StackLayout Grid.Row="1" Grid.Column="0" >
+                <Button x:Name="btnTranlate" Clicked="btnTranlate_Clicked" Text="Dịch" 
+                        WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center"
+                        BackgroundColor="#F57328"
+                        FontSize="20" CornerRadius="15" FontAttributes="None"></Button>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <RadioButton GroupName="Langs" Content="VI - EN" x:Name="radioVI" Value="VI-EN" IsChecked="True"></RadioButton>
+                    <RadioButton GroupName="Langs" Content="EN - VI" x:Name="radioEN" Value="EN-VI"></RadioButton>
+                </StackLayout>
+                
+            </StackLayout>
+            <Frame BorderColor="#FAAB78 " Grid.Row="2" Grid.Column="0" BackgroundColor="#F57328"  CornerRadius="15" Padding="2">
+                <Frame  BorderColor="#FAAB78 "  CornerRadius="15">
+                    <Label x:Name="output"
+                   FontSize="25" ></Label>
+                </Frame>
+                
+            </Frame>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

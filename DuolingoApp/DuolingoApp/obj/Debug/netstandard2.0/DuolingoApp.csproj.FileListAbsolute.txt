@@ -67,3 +67,4 @@ D:\UIT\HK1-3\lap-trinh-da-nen-tang\DoAn\Doulingo_2\doulingo_app\DuolingoApp\Duol
 D:\UIT\HK1-3\lap-trinh-da-nen-tang\DoAn\Doulingo_2\doulingo_app\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\DuolingoApp.pdb
 D:\UIT\HK1-3\lap-trinh-da-nen-tang\DoAn\Doulingo_2\doulingo_app\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\ref\DuolingoApp.dll
 D:\UIT\HK1-3\lap-trinh-da-nen-tang\DoAn\Doulingo_2\doulingo_app\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\UserPages\GioiThieu.xaml.g.cs
+D:\UIT\HK1-3\lap-trinh-da-nen-tang\DoAn\Doulingo_2\doulingo_app\DuolingoApp\DuolingoApp\obj\Debug\netstandard2.0\Translate\TranslatePage.xaml.g.cs

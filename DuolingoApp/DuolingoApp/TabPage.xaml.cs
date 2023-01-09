@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DuolingoApp.Classes;
 using DuolingoApp.Truyen_BaiHoc;
 using DuolingoApp.UserPages;
+using DuolingoApp.Translate;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -31,22 +32,29 @@ namespace DuolingoApp
                 Title = "Trang Chủ",
                 IconImageSource = "tab_lessons.png"
             };
-            
-
-            var tr = new NavigationPage(new TruyenPage(nd))
-            {
-                Title = "Kho Truyện",
-                IconImageSource = "tab_stories.png"
-            };
 
             var hs = new NavigationPage(new NguoiDungPage(nd))
             {
                 Title = "Hồ Sơ",
                 IconImageSource = "tab_profile.png"
             };
+            var tr = new NavigationPage(new TruyenPage(nd))
+            {
+                Title = "Kho Truyện",
+                IconImageSource = "tab_stories.png"
+            };
+
+       
+            var trans = new NavigationPage(new TranslatePage(nd))
+            {
+                Title = "Dịch nghĩa",
+                IconImageSource = "tab_ranking.png"
+            };
             Children.Add(bh);
             Children.Add(tr);
+            Children.Add(trans);
             Children.Add(hs);
+            
         }
 
         protected override void OnCurrentPageChanged()

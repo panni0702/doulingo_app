@@ -49,6 +49,11 @@ namespace DuolingoApp.UserPages
             }
         }
 
+        private void dk_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Taohs());
+        }
+
         private void cmdfb_Clicked(object sender, EventArgs e)
         {
 
@@ -57,11 +62,6 @@ namespace DuolingoApp.UserPages
         private void cmdgg_Clicked(object sender, EventArgs e)
         {
 
-        }
-
-        private void dk_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Taohs());
         }
     }
 }

@@ -25,7 +25,6 @@ namespace DuolingoApp.UserPages
             u = nd;
             HienThi(nd);
         }
-
         void HienThi(User nd)
         {
             txtten.Text = nd.TenND;
@@ -42,7 +41,6 @@ namespace DuolingoApp.UserPages
             img.Source = hinh;
             KhoiTao();
         }
-
         void KhoiTao()
         {
             List<User> nds = new List<User>();
@@ -99,15 +97,12 @@ namespace DuolingoApp.UserPages
         {
             Navigation.PushAsync(new ChinhSuaPage(u));
         }
-
         private async void btndx_Clicked(object sender, EventArgs e)
         {
-
              Navigation.PopModalAsync();
             await Navigation.PushAsync(new MainPage());
 
         }
-
         private void img_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ChinhSuaPage(u));
@@ -118,7 +113,6 @@ namespace DuolingoApp.UserPages
             var mk = new MatKhauPage(u);
             await Navigation.PushModalAsync(mk);
         }
-
         private void lstnd_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             User u1 = db.LayNd(u.TenND);

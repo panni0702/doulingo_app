@@ -52,7 +52,6 @@
                                             VerticalOptions="Center"
                                             WidthRequest="100"
                                             Padding="10">
-                                    <!-- chỗ này chỉnh lại-->
                                     <BoxView 
                                                 BackgroundColor="LightBlue"
                                                 CornerRadius="65"
@@ -61,8 +60,7 @@
                                                 HorizontalOptions="Center"
                                                 VerticalOptions="Center"
                                                 WidthRequest="{OnPlatform Android=100,
-                                                                          iOS=120}"
-                                                />
+                                                                          iOS=120}" />
                                     <ImageButton
                                                 HeightRequest="70"
                                                 HorizontalOptions="Center"
@@ -70,8 +68,7 @@
                                                 BackgroundColor="Transparent"
                                                 WidthRequest="70"
                                                 Clicked="ImageButton_Clicked"
-                                                CommandParameter="{Binding .}"
-                                                />
+                                                CommandParameter="{Binding .}" />
                                     <Grid
                                                 HorizontalOptions="End"
                                                 VerticalOptions="End"
@@ -83,15 +80,11 @@
                                                     Text="{Binding Diem}"
                                                     TextColor="#F57328 "
                                                     VerticalTextAlignment="Center"/>
-
                                     </Grid>
-
-
                                 </Grid>
                                 <Label 
                                         FontSize="25"
                                         HorizontalTextAlignment="Center"
-                               
                                         Text="{Binding TenBH}"/>
                             </StackLayout>
                         </ViewCell>

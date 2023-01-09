@@ -38,11 +38,7 @@
                                                HorizontalOptions="Start" VerticalOptions="Center" 
                                                 TextColor="DarkGreen" FontSize="25"/>
                                     </Grid>
-
-
-                                    <!--<Button Text="{Binding Tentruyen}" Style="{StaticResource btnnext}" Margin="0,10,0,10" HorizontalOptions="Fill" CommandParameter="{Binding .}" Clicked="Button_Clicked" />
-                                    -->
-                                    </ViewCell>
+                                </ViewCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>

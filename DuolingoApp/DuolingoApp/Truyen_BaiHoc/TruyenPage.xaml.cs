@@ -21,16 +21,13 @@ namespace DuolingoApp.Truyen_BaiHoc
         public TruyenPage()
         {
             InitializeComponent();
-            //Thu();
         }
-
         public TruyenPage(User nd)
         {
             InitializeComponent();
             u = nd;
             HienThiDsTruyen();
             HienThi(nd);
-            //KhoiTao();
 
         }
         void HienThi(User nd)
@@ -46,7 +43,6 @@ namespace DuolingoApp.Truyen_BaiHoc
             var dstr = JsonConvert.DeserializeObject<List<truyen>>(chuoi);
             lsttr.ItemsSource = dstr;
         }
-
         private void lsttr_ItemTapped_1(object sender, ItemTappedEventArgs e)
         {
             User u1 = db.LayNd(u.TenND);
@@ -60,15 +56,5 @@ namespace DuolingoApp.Truyen_BaiHoc
                 Navigation.PushAsync(new NdTruyenPage(t));
             }    
         }
-
-        /*
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Button nutchon = (Button)sender;
-            truyen tr = (truyen)nutchon.CommandParameter;
-
-            Navigation.PushModalAsync(new NdTruyenPage(tr));
-        }
-        */
     }
 }
